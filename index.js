@@ -1,0 +1,1 @@
+alert('Remember that this site is closing down this Thursday!');
