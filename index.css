@@ -164,3 +164,7 @@ textarea,
     width: 100vw;
     cursor: pointer;
 }
+
+.github-icon {
+    padding-left: 5px;
+}
