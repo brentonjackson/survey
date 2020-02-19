@@ -1,3 +1,137 @@
-p {
-	text-align: center;
+@import url("https://use.typekit.net/lrr4iqb.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,800,800i&display=swap');
+
+@font-face {
+  font-family: og-emoji;
+  src: url(assets/fonts/og-dcm-emoji.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: hsl(171,6%,25%);
+    background: hsl(35, 72%, 93%);
+  --bg: hsl(0, 100%, 96%);
+  --primary: hsl(218, 38%, 50%);
+  --secondary-1: hsl(216, 26%, 80%);
+  --secondary-2: hsl(358, 44%, 84%);
+  --accent-1: hsl(355, 63%, 54%);
+  --accent-2: hsl(39, 90%, 66%);
+  --secondary: hsl(0, 0%, 14%);
+  --text-light-bg: hsl(171, 6%, 25%);
+  --text-dark-bg: white;
+  --bg-dark: #242425;
+  --title-font: sauna-swash-new, sans-serif;
+  --body-font: Raleway, sans-serif;
+    font-family: var(--body-font);
+}
+
+
+
+.container {
+    /* margin: 3.125rem 3.125rem; */
+    /* padding: 40px; */
+    padding-bottom: 0;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    height: 100vh;
+    color: var(--text-light-bg);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+#title-txt {
+    font-family: var(--title-font);
+    font-size: calc(3rem + 1vw);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+.header {
+    margin-bottom: 1.875rem;
+    padding: 0 0.625rem;
+    text-align: center;
+}
+
+form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: hsl(35,72%,80%); */
+    padding: 2.5rem 0;
+    /* display: block; */
+}
+
+@media (min-width: 450px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+label {
+    /* display: flex; */
+    align-items: center;
+    margin: .5rem auto 1rem auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem auto 1rem auto;
+}
+
+.recommend {
+    width: 5%;
+}
+
+#recommend {
+    margin: .5rem auto 1rem auto;
+}
+
+input,
+select,
+textarea,
+.submit-button {
+    font-family: var(--body-font);
+}
+
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
 }

@@ -10,6 +10,7 @@ A simple survey form that can be used to get feedback after an event
 
 * HTML
 * native CSS
+* JavaScript
 
 ## Contributing
 
