@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hackathon Survey</title>
-	<link rel="stylesheet" href="index.css">
+    <title>Hackathon Survey</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<div class="container">
+    <div class="container">
         <header class="header">
-            <h1 id = "title-txt" class="title bold">
+            <h1 id = "title" class="title bold">
                 Horizons Survey Form
             </h1>
-            <p class="details">
+            <p id="description" class="details">
                 Thank you for taking the time to help us improve the program!
             </p>
         </header>
-
         <form id="survey-form">
             <div class="form-group">
-                <label for="name">Name</label><br>
+                <label for="name" id="name-label">Name</label><br>
                 <input name="name" type="text" id="name" class="form-control" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
@@ -26,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="number" id="number-label">Age</label><br>
-                <input type="number" name="age" id="number" class="form-control" placeholder="Age">
+                <input type="number" name="age" id="number" class="form-control" placeholder="Age" max="99" min="10">
             </div>
             <div class="form-group">
                 <label for="dropdown">Which option best describes your current role?</label><br>
@@ -49,17 +48,38 @@
             <div class="form-group">
                 <p id="recommend">Would you recommend this program to a friend?</p>
                 <label>
-                    <input type="radio" name="recommend" value="yup" class="recommend">
+                    <input type="radio" name="recommend" value="yup" class="input-radio">
                     Yup
                 </label><br>
                 <label>
-                    <input type="radio" name="recommend" value="maybe" class="recommend">
+                    <input type="radio" name="recommend" value="maybe" class="input-radio">
                     Maybe
                 </label><br>
                 <label>
-                    <input type="radio" name="recommend" value="nahh" class="recommend">
+                    <input type="radio" name="recommend" value="nahh" class="input-radio">
                     Nahh
                 </label>
+            </div>
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-checkbox" value="art-supplies">Art Supplies
+                </label><br>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-checkbox" value="prototyping-tools">Prototyping Tools
+                </label><br>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-checkbox" value="food-options">Food Options
+                </label><br>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-checkbox" value="available-assistance">Available Assistance
+                </label><br>
+                <label>
+                    <input name="prefer" type="checkbox" class="input-checkbox" value="other-technologies">Other Technologies
+                </label><br>
             </div>
             <div class="form-group">
                 <label for="comments">Any comments or suggestions?</label><br>
@@ -70,10 +90,8 @@
                     SUBMIT
                 </button>
             </div>
-
         </form>
     </div>
-
 </body>
 <script src="index.js"></script>
 </html>
