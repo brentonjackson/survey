@@ -2,7 +2,7 @@
 
 A simple survey form that can be used to get feedback after an event.
 
-https://dabrentmeister.github.io/survey/
+https://brentonjackson.github.io/survey/
 
 ### Features
 
@@ -21,7 +21,7 @@ Feel free to contribute!
 
 ## Authors
 
-* **Brenton Jackson** - *Initial work* - (https://github.com/daBrentMeister)
+* **Brenton Jackson** - *Initial work* - (https://github.com/brentonjackson)
 
 ## Acknowledgments
 
