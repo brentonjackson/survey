@@ -15,5 +15,5 @@ function changeBack() {
 }
 
 function toProfile() {
-    window.location='http://github.com/dabrentmeister/survey';
+    window.location='http://github.com/brentonjackson/survey';
 }
