@@ -15,5 +15,5 @@ function changeBack() {
 }
 
 function toProfile() {
-    window.location='http://github.com/dabrentmeister/survey';
+    window.open('http://github.com/dabrentmeister/survey','_blank');
 }
