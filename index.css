@@ -36,8 +36,7 @@ body {
   --title-font: sauna-swash-new, sans-serif;
   --body-font: Raleway, sans-serif;
     font-family: var(--body-font);
-    font-size: 50px;
-    height: 100vh;
+    font-size: 3=20px;
 }
 
 
@@ -46,7 +45,7 @@ body {
     /* margin: 3.125rem 3.125rem; */
     /* padding: 40px; */
     padding-bottom: 0;
-    width: 100%;
+    width: 90vw;
     margin: 3.125rem auto 0 auto;
     /* height: 100vh; */
     color: var(--text-light-bg);
@@ -58,7 +57,7 @@ body {
 
 #title {
     font-family: var(--title-font);
-    font-size: 100px;
+    font-size: 50px;
     margin-bottom: 0;
 }
 
@@ -68,14 +67,10 @@ body {
     margin-bottom: 0;
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 20px;
     }
-}
-
-@media (min-width: 768px) {
-    
     .container {
         max-width: 720px;
     }
@@ -96,11 +91,7 @@ form {
     margin-bottom: 20vh ;
 }
 
-@media (min-width: 450px) {
-    form {
-        padding: 2.5rem;
-    }
-}
+
 .form-group {
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
@@ -169,4 +160,8 @@ textarea,
 
 .github-icon {
     padding-left: 5px;
+}
+
+#widgetButton {
+    width: 250px;
 }
