@@ -74,6 +74,10 @@ body {
     .container {
         max-width: 720px;
     }
+
+    #title {
+        font-size: 65px;
+    }
 }
 
 .header {
